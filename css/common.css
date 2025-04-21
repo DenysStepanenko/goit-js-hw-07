@@ -12,3 +12,223 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+
+/* Стилі для списку категорій */
+#categories {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  list-style: none;
+  padding: 24px;
+  max-width: 440px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Стилі для кожного елемента категорії */
+.item {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  width: 392px;
+  background: #f6f6fe;
+  border-radius: 8px;
+}
+
+/* Стилі для заголовків категорій */
+.item h2 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+/* Стилі для вкладених списків */
+.item ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Стилі для елементів вкладених списків */
+.item ul li {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding: 8px 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background: #f6f6fe;
+  display: flex;
+  align-items: center;
+}
+
+/* Стилі для галереї (залишаємо лише останню версію) */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px; /* Вертикальний і горизонтальний відступ (з дизайну) */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+/* Стилі для елементів галереї */
+.gallery-item {
+  flex: 0 0 calc(33.333% - 16px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  height: 300px;
+}
+
+/* Стилі для зображень */
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Стилі для завдання 3 (text field) */
+#name-input {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+  transition: border-color 0.3s;
+}
+
+#name-input:hover {
+  border-color: #000;
+}
+
+#name-input:active,
+#name-input:focus {
+  border-color: #808080;
+  outline: none;
+}
+
+#name-input::placeholder {
+  color: #999;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2e2f42;
+  margin: 0;
+}
+
+/* Стилі для завдання 4 (form) */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 360px;
+  padding: 24px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 16px;
+  color: #2e2f42;
+}
+
+.login-form input {
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+  transition: border-color 0.3s;
+}
+
+.login-form input:hover {
+  border-color: #000;
+}
+
+.login-form input:active,
+.login-form input:focus {
+  border-color: #808080;
+  outline: none;
+}
+
+.login-form button {
+  padding: 10px;
+  background-color: #4e75ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+  background-color: #6c8cff;
+}
+
+/* Стилі для завдання 5 (widget, залишаємо лише одну версію) */
+.widget {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 360px;
+  padding: 24px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.widget p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+}
+
+.widget .color {
+  font-weight: 600;
+}
+
+.widget .change-color {
+  padding: 10px;
+  background-color: #4e75ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.widget .change-color:hover {
+  background-color: #6c8cff;
+}
